@@ -56,6 +56,9 @@ across I/O banks to satisfy voltage and timing constraints.
 
 This layout reflects practical constraints rather than arbitrary assignment.
 
+## Demo
+[https://youtu.be/8N_bbvLrMmY](https://youtu.be/8N_bbvLrMmY)
+
 ## Contributors
 This project was developed collaboratively.
 Detailed role attribution will be added.

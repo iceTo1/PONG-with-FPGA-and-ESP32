@@ -1,0 +1,14 @@
+
+State Machine - |FPGA|pkt_state
+Name pkt_state.S_IDLE pkt_state.S_END pkt_state.S_DATA 
+pkt_state.S_IDLE 0 0 0 
+pkt_state.S_DATA 1 0 1 
+pkt_state.S_END 1 1 0 
+
+State Machine - |FPGA|uart_rx_simple:u_rx|r_SM_Main
+Name r_SM_Main.s_RX_STOP_BIT r_SM_Main.s_RX_DATA_BITS r_SM_Main.s_RX_START_BIT r_SM_Main.s_IDLE r_SM_Main.s_CLEANUP 
+r_SM_Main.s_IDLE 0 0 0 0 0 
+r_SM_Main.s_RX_START_BIT 0 0 1 1 0 
+r_SM_Main.s_RX_DATA_BITS 0 1 0 1 0 
+r_SM_Main.s_RX_STOP_BIT 1 0 0 1 0 
+r_SM_Main.s_CLEANUP 0 0 0 1 1 

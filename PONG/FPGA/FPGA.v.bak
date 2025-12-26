@@ -1,0 +1,13 @@
+
+// TOP: ESP32 -> (UART) -> FPGA -> VGA
+
+module top(
+	input  wire MAX10_CLK1_50, // 50MHz board clk
+	input  wire UART_RX,       // from ESP32 TX (3.3V)
+	output wire [3:0] VGA_R,
+	output wire [3:0] VGA_G,
+	output wire [3:0] VGA_B,
+	output wire       VGA_HS,
+	output wire       VGA_VS
+);
+
